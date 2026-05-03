@@ -93,7 +93,6 @@ sudo setfacl -m u:carol:r-x /srv/project/code
 | bob | /usr/bin/apt, /usr/bin/apt-get | Только пакетный менеджер | Да |
 | carol | /usr/bin/journalctl, /bin/cat /var/log/* | Только просмотр логов | Да |
 
-![Скриншот sudo -l -U alice](screens/screen4_sudo.png)
 
 **Почему alice использует NOPASSWD, а ограничения у всех разные:**  
 Alice — администратор, ей нужен быстрый полный доступ без лишних барьеров. Bob и carol получают только те права, которые нужны для их рабочих задач.
