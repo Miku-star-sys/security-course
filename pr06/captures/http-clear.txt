@@ -1,0 +1,72 @@
+tcpdump: verbose output suppressed, use -v[v]... for full protocol decode
+listening on lo, link-type EN10MB (Ethernet), snapshot length 262144 bytes
+09:15:54.888816 IP 127.0.0.1.36418 > 127.0.0.1.8080: Flags [S], seq 2080378252, win 65495, options [mss 65495,sackOK,TS val 510517412 ecr 0,nop,wscale 7], length 0
+E..<..@.@............B..|............0.........
+.m..........
+09:15:54.888842 IP 127.0.0.1.8080 > 127.0.0.1.36418: Flags [S.], seq 1007709472, ack 2080378253, win 65483, options [mss 65495,sackOK,TS val 510517412 ecr 510517412,nop,wscale 7], length 0
+E..<..@.@.<............B<.m |........0.........
+.m...m......
+09:15:54.888861 IP 127.0.0.1.36418 > 127.0.0.1.8080: Flags [.], ack 1, win 512, options [nop,nop,TS val 510517412 ecr 510517412], length 0
+E..4..@.@..#.........B..|...<.m!.....(.....
+.m...m..
+09:15:54.889872 IP 127.0.0.1.36418 > 127.0.0.1.8080: Flags [P.], seq 1:187, ack 1, win 512, options [nop,nop,TS val 510517413 ecr 510517412], length 186: HTTP: POST / HTTP/1.1
+E.....@.@..h.........B..|...<.m!...........
+.m...m..POST / HTTP/1.1
+Host: localhost:8080
+User-Agent: curl/7.88.1
+Accept: */*
+Content-Length: 38
+Content-Type: application/x-www-form-urlencoded
+
+username=vasya&password=MyPassword2024
+09:15:54.889920 IP 127.0.0.1.8080 > 127.0.0.1.36418: Flags [.], ack 187, win 511, options [nop,nop,TS val 510517413 ecr 510517413], length 0
+E..4v.@.@..B...........B<.m!|..G.....(.....
+.m...m..
+09:15:54.890942 IP 127.0.0.1.8080 > 127.0.0.1.36418: Flags [P.], seq 1:199, ack 187, win 512, options [nop,nop,TS val 510517414 ecr 510517413], length 198: HTTP: HTTP/1.0 501 Unsupported method ('POST')
+E...v.@.@..{...........B<.m!|..G...........
+.m...m..HTTP/1.0 501 Unsupported method ('POST')
+Server: SimpleHTTP/0.6 Python/3.11.2
+Date: Wed, 10 Jun 2026 04:15:54 GMT
+Connection: close
+Content-Type: text/html;charset=utf-8
+Content-Length: 357
+
+
+09:15:54.891006 IP 127.0.0.1.36418 > 127.0.0.1.8080: Flags [.], ack 199, win 511, options [nop,nop,TS val 510517414 ecr 510517414], length 0
+E..4..@.@..!.........B..|..G<.m......(.....
+.m...m..
+09:15:54.891046 IP 127.0.0.1.8080 > 127.0.0.1.36418: Flags [P.], seq 199:556, ack 187, win 512, options [nop,nop,TS val 510517415 ecr 510517414], length 357: HTTP
+E...v.@.@..............B<.m.|..G...........
+.m...m..<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Error response</title>
+    </head>
+    <body>
+        <h1>Error response</h1>
+        <p>Error code: 501</p>
+        <p>Message: Unsupported method ('POST').</p>
+        <p>Error code explanation: 501 - Server does not support this operation.</p>
+    </body>
+</html>
+
+09:15:54.891053 IP 127.0.0.1.36418 > 127.0.0.1.8080: Flags [.], ack 556, win 509, options [nop,nop,TS val 510517415 ecr 510517415], length 0
+E..4..@.@.. .........B..|..G<.oL.....(.....
+.m...m..
+09:15:54.891341 IP 127.0.0.1.36418 > 127.0.0.1.8080: Flags [F.], seq 187, ack 556, win 512, options [nop,nop,TS val 510517415 ecr 510517415], length 0
+E..4..@.@............B..|..G<.oL.....(.....
+.m...m..
+09:15:54.891347 IP 127.0.0.1.8080 > 127.0.0.1.36418: Flags [F.], seq 556, ack 187, win 512, options [nop,nop,TS val 510517415 ecr 510517415], length 0
+E..4v.@.@..?...........B<.oL|..G.....(.....
+.m...m..
+09:15:54.891356 IP 127.0.0.1.36418 > 127.0.0.1.8080: Flags [.], ack 557, win 512, options [nop,nop,TS val 510517415 ecr 510517415], length 0
+E..4..@.@............B..|..H<.oM.....(.....
+.m...m..
+09:15:54.891362 IP 127.0.0.1.8080 > 127.0.0.1.36418: Flags [.], ack 188, win 512, options [nop,nop,TS val 510517415 ecr 510517415], length 0
+E..4v.@.@..>...........B<.oM|..H.....(.....
+.m...m..
+
+13 packets captured
+26 packets received by filter
+0 packets dropped by kernel
