@@ -72,8 +72,6 @@ SPDX-License-Identifier: MIT
 
 ## 5. CI-проверка
 
-Ссылка на запущенный workflow: *(вставьте сюда ссылку на ваш actual workflow run на GitHub, например https://github.com/ваш-логин/security-course/actions/runs/...)*
-
 Статус licensee job: *(вставьте статус — success/failure — из вашего workflow)*
 Статус reuse job: *(вставьте статус — success/failure — из вашего workflow)*
 
